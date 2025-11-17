@@ -83,6 +83,9 @@ h3 {
 }
 
 /* HEADER */
+.main-nav{
+  margin-left: 76px;
+}
 
 header {
   width: 100%;
@@ -94,19 +97,28 @@ header .container {
   padding: 24px 15px;
   border-bottom: 1px solid #e7e9fc;
   justify-content: flex-start;
-  gap: 24px;
-  padding-left: 0;
-  padding-right: 15px;
+}
 
+.top-line {
+  margin-right: 332px;
+  gap: 40px;
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
 .links,
-.top-line,
 .contact {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
+.contact{ 
+  display: flex;
+  gap: 40px;
+}
+
 
 .top-line,
 .contact {
@@ -149,11 +161,7 @@ header .container {
   font-weight: 700;
 }
 
-/*Adres Bloğu*/
 
-address {
-  margin-left: auto;
-}
 
 /*HERO*/
 
@@ -169,7 +177,7 @@ address {
   line-height: 1.07;
   letter-spacing: 0.02em;
   font-size: 56px;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
   max-width: 540px;
   margin-left: auto;
   margin-right: auto;
@@ -259,7 +267,7 @@ address {
 }
 
 .person-name {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .role {
@@ -270,12 +278,10 @@ address {
 
 .team ul > li {
   flex: 0 0 calc((100% - 72px) / 4);
-}
-
-.team ul {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /*PORTFOLİO*/
@@ -289,7 +295,7 @@ address {
 }
 
 .portfolio .portfolio-item {
-  flex: 0 0 calc((100% - 48px) / 3);
+  flex: 0 0 calc((100% - 48px) / 3);s
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -306,6 +312,14 @@ address {
 .portfolio-item-title,
 .portfolio-item-text {
   color: inherit;
+}
+
+.portfolio-item-title{
+  margin: 32px 0px 8px 16px;
+}
+
+.portfolio-item-text{
+  margin-left: 16px;
 }
 
 /*FOOTER*/
@@ -331,6 +345,9 @@ address {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   letter-spacing: 0.03em;
+  display: inline-block;
+  margin-bottom: 16px;
+  
 }
 
 .footer-text {
@@ -339,4 +356,7 @@ address {
   line-height: 1.5;
   font-weight: 400;
   margin: 0;
+  max-width: 264px;
+  font-weight: 400;
+  letter-spacing: 2%;
 }
